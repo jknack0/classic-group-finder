@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import backgroundImage from '../../images/cgf-bg.jpg'
+import GroupFinder from '../GroupFinder'
 
 const App = () => {
   // I hate this
@@ -12,7 +13,7 @@ const App = () => {
 
   return (
     <div className='app' style={appStyle}>
-      App
+      <GroupFinder />
     </div>
   )
 }

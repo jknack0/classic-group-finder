@@ -1,0 +1,12 @@
+.group-finder-container {
+  display: block;
+  width: 600px;
+  height: 700px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 600px) {
+  .group-finder-container {
+    height: 100%;
+  }
+}
