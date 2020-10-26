@@ -19,7 +19,9 @@
 .title-bar-exit-button {
   color: rgb(255, 255, 248);
   background: rgba(14, 14, 14, 0.938);
+  border: 1px grey solid;
   cursor: pointer;
+  padding: 1px;
 }
 
 .title-bar-exit-button:hover{
