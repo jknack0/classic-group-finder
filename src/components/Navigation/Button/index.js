@@ -1,10 +1,13 @@
 import React from 'react'
 import './button.css'
 
-const Button = ({ label }) => {
+const Button = ({ label, image, alt }) => {
   return (
     <div className='button'>
-      {label}
+      <img className='button-image' src={image} alt={alt} />
+      <div className='button-label'>
+        {label}
+      </div>
     </div>
   )
 }
