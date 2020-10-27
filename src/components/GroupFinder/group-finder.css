@@ -1,5 +1,7 @@
 .group-finder-container {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 600px;
   height: 700px;
   background: rgba(0, 0, 0, 0.8);
