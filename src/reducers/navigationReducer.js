@@ -7,6 +7,7 @@ const navigationReducer = (state = '', action) => {
   }
 }
 
+// Action Creators
 export const setSelected = (filter) => {
   return {
     type: 'SET_SELECTED',
