@@ -5,7 +5,7 @@ import './action-bar.css'
 const ActionBar = () => {
   return (
     <div className='action-bar-container'>
-      <ActionButton label='Start Group' />
+      <ActionButton label='Start Group' link='startgroup' />
       <ActionButton label='Join Group' />
     </div>
   )

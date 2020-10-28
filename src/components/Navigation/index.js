@@ -12,7 +12,7 @@ const Navigation = () => {
       <Button label='Dungeon' image={Dungeon} alt='Dungeon icon image' />
       <Button label='Raid' image={Raid} alt='Raid icon image' />
       <Button label='Questing' image={Quest} alt='Quest icon image' />
-      <Button label='Boosts' image={Boost} alt='Bost icon image' />
+      <Button label='Boosts' image={Boost} alt='Boost icon image' />
     </div>
   )
 }

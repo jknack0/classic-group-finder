@@ -6,8 +6,6 @@ import './App.css';
 
 
 const App = () => {
-  
-
   // I hate this
   const appStyle = {
     backgroundImage: "url(" + backgroundImage + ")",
