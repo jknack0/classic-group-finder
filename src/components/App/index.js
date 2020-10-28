@@ -1,9 +1,13 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as  Router } from 'react-router-dom'
+import Routes from './Routes'
 import backgroundImage from '../../images/cgf-bg.jpg'
-import GroupFinder from '../GroupFinder'
+import './App.css';
+
 
 const App = () => {
+  
+
   // I hate this
   const appStyle = {
     backgroundImage: "url(" + backgroundImage + ")",
@@ -13,7 +17,9 @@ const App = () => {
 
   return (
     <div className='app' style={appStyle}>
-      <GroupFinder />
+      <Router>
+        <Routes />
+      </Router>
     </div>
   )
 }

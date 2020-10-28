@@ -6,6 +6,7 @@ import './button.css'
 const Button = ({ label, image, alt }) => {
   const dispatch = useDispatch()
   const currentSelected = useSelector(state => state.navigation)
+  const isSelected = currentSelected === label ? 'button-selected' : ''
   
 
   const handleClick = (event) => {
@@ -14,7 +15,7 @@ const Button = ({ label, image, alt }) => {
   }
 
   return (
-    <div className={`button ${currentSelected === label ? 'selected' : ''}`} onClick={handleClick}>
+    <div className={`button ${isSelected}`} onClick={handleClick}>
       <img className='button-image' src={image} alt={alt} />
       <div className='button-label'>
         {label}

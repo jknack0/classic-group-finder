@@ -18,18 +18,19 @@
 }
 
 .button-image {
-  max-height: 80px;
+  max-height: 70px;
   border-radius: 20px;
 }
 
 .button:hover {
-  opacity: .7;
+  opacity: .9;
+  box-shadow: 0px 0px 20px 2px rgb(182, 155, 3);
 }
 
 .button:active {
-  box-shadow: 0px 0px 14px 8px rgb(182, 155, 3);
+  box-shadow: 0px 0px 10px 5px rgb(182, 155, 3);
 }
 
-.selected {
+.button-selected {
   border: 2px rgb(182, 155, 3) solid;
 }
