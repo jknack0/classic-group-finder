@@ -1,11 +1,10 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import GroupFinder from '../GroupFinder'
 import StartGroup from '../StartGroup'
-
+import Navigation from '../Navigation'
 const Routes = () => (
   <Switch>
-    <Route path='/' exact component={GroupFinder} />
+    <Route path='/' exact component={Navigation} />
     <Route path='/startgroup' component={StartGroup} />
   </Switch>
 )

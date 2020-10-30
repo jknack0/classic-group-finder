@@ -34,3 +34,7 @@
 .button-selected {
   border: 2px rgb(182, 155, 3) solid;
 }
+
+a {
+  text-decoration: none;
+}

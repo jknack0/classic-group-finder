@@ -3,6 +3,7 @@ import { BrowserRouter as  Router } from 'react-router-dom'
 import Routes from './Routes'
 import backgroundImage from '../../images/cgf-bg.jpg'
 import './App.css';
+import GroupFinder from '../GroupFinder';
 
 
 const App = () => {
@@ -15,9 +16,11 @@ const App = () => {
 
   return (
     <div className='app' style={appStyle}>
-      <Router>
-        <Routes />
-      </Router>
+      <GroupFinder>
+        <Router>
+          <Routes />
+        </Router>
+      </GroupFinder>  
     </div>
   )
 }
