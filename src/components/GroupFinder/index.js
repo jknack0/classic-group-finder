@@ -8,7 +8,6 @@ const GroupFinder = ({ children }) => {
       <TitleBar />
       {children}
     </div>
-  
   )
 }
 

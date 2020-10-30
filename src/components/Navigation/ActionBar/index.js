@@ -6,7 +6,7 @@ const ActionBar = () => {
   return (
     <div className='action-bar-container'>
       <ActionButton label='Start Group' link='startgroup' />
-      <ActionButton label='Join Group' />
+      <ActionButton label='Join Group' link='/' />
     </div>
   )
 }
