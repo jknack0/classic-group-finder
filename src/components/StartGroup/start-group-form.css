@@ -1,0 +1,9 @@
+.start-group-container {
+  text-align: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.start-group-container h2 {
+  color: rgb(182, 155, 3);
+}

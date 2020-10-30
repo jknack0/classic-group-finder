@@ -2,11 +2,11 @@ import React from 'react'
 import './group-finder.css'
 import TitleBar from '../TitleBar'
 
-const GroupFinder = ({ children }) => {
+const GroupFinder = (props) => {
   return (
     <div className='group-finder-container'>
       <TitleBar />
-      {children}
+      {props.children}
     </div>
   )
 }
