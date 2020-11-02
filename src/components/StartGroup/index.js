@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
+import Button from './Button'
 
 import dungeons from '../../constants/dungeons'
 import raids from '../../constants/raids'
@@ -22,8 +23,7 @@ const StartGroupForm = () => {
   return (
     <div className='start-group-container'>
       <h2>Start {groupType} Group</h2>
-      <div className='start-group-form'>
-        <form>
+        <form className='start-group-form'>
           <label htmlFor='groupTitle'>Title:</label><br />
           <input name='groupTitle' value={title} onChange={(event) => setTitle(event.target.value)} /><br />
           <label htmlFor='location'>Location:</label><br />
@@ -31,9 +31,16 @@ const StartGroupForm = () => {
             { locations && locations.map(location => <option value={location}>{location}</option>) }
           </select><br />
           <label htmlFor='details'>Details:</label><br />
-          <textarea name='details' value={details} onChange={(event) => setDetails(event.target.value)} rows='4' cols='50' /><br />
+          <textarea name='details' value={details} onChange={(event) => setDetails(event.target.value)} /><br />
         </form>
-      </div>
+        <div className='start-group-action-container'>
+          <Button>
+            Back
+          </Button>
+          <Button>
+            Create
+          </Button>
+        </div>
     </div>
   )
 }
