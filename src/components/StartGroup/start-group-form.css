@@ -10,3 +10,13 @@
   color: rgb(182, 155, 3);
   padding: 20px;
 }
+
+.start-group-form {
+  padding: 2rem;
+  height: 100%;
+  text-align: start;
+}
+
+.start-group-form label {
+  color: rgb(182, 155, 3);
+}
