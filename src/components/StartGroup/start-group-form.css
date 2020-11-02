@@ -1,9 +1,12 @@
 .start-group-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   height: 100%;
-  padding: 20px;
 }
 
 .start-group-container h2 {
   color: rgb(182, 155, 3);
+  padding: 20px;
 }

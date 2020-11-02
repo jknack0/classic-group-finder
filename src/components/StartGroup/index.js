@@ -8,6 +8,9 @@ const StartGroupForm = () => {
   return (
     <div className='start-group-container'>
       <h2>Start {groupType} Group</h2>
+      <form>
+
+      </form>
     </div>
   )
 }
