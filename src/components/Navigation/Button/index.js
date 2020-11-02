@@ -7,7 +7,6 @@ const Button = ({ label, image, alt }) => {
   const dispatch = useDispatch()
   const currentSelected = useSelector(state => state.navigation)
   const isSelected = currentSelected === label ? 'button-selected' : ''
-  
 
   const handleClick = (event) => {
     event.preventDefault()

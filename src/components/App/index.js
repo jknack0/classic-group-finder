@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as  Router } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import Routes from './Routes'
 import backgroundImage from '../../images/cgf-bg.jpg'
 import './App.css';
@@ -14,10 +15,12 @@ const App = () => {
     backgroundRepeat: 'no-repeat'
   }
 
+  const history = useHistory()
+
   return (
     <div className='app' style={appStyle}>
       <GroupFinder>
-        <Router>
+        <Router history={history}>
           <Routes />
         </Router>
       </GroupFinder>  
